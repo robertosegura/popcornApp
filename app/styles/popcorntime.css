@@ -1,0 +1,78 @@
+body{
+  background: #17181b;
+}
+
+.poster{
+  width: 185px;
+  height: 278px;
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.poster:hover{
+  border: 3px solid #2d75df;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.movieTitle{
+  padding: 5px 0 20px 0;
+}
+
+.movieTitle .title{
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+}
+.movieTitle .year{
+  color: #5b5b5b;
+  font-size: 10px;
+  display: block;
+}
+
+.titleMovie {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+}
+
+.yearMovie {
+  color: #5b5b5b;
+  font-size: 14px;
+  display: block;
+}
+
+.overviewMovie {
+  color: #fff;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.backImage {
+  width: 100%;
+  height: 100%;
+}
+
+.seasonDetail, .seasonsContainer {
+  padding-bottom: 20px;
+}
+
+.paginatorTop {
+  padding-bottom: 15px;
+}
+
+.pictureContainer {
+  padding-top: 15px;
+}
+
+.titleSeason {
+  color: rgba(237, 237, 237, 0.72);
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm-3">
+        <img class="poster" ng-src="https://image.tmdb.org/t/p/w185/{{ser.serie.poster_path}}" alt="">
+    </div>
+
+    <div class="col-sm-9">
+        <div class="movieTitle">
+            <span class="titleMovie">{{ser.serie.title}}</span>
+            <span class="yearMovie">{{ser.serie.release_date | date:'yyyy'}}</span>
+            <span class="overviewMovie">{{ser.serie.overview}}</span>
+        </div>
+    </div>
+</div>
+<div class="row seasons">
+    <div class="col-sm-3" ng-repeat="season in ser.serie.seasons">
+        <a href="#/series/{{ser.serie.id}}/season/{{season.season_number}}"><img class="poster" ng-src="https://image.tmdb.org/t/p/w185/{{season.poster_path}}" alt=""></a>
+        <div class="movieTitle">
+            <span class="title">{{season.title | cut:false:23}}</span>
+            <span class="year">{{season.release_date | date:'yyyy'}}</span>
+        </div>
+    </div>
+</div>

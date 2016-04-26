@@ -1,0 +1,22 @@
+<div>
+    <div class="col-sm-3">
+        <img class="poster" ng-src="https://image.tmdb.org/t/p/w185/{{mov.movie.poster_path}}" alt="">
+    </div>
+
+    <div class="col-sm-9">
+        <div class="movieTitle">
+            <span class="titleMovie">{{mov.movie.title}}</span>
+            <span class="yearMovie">{{mov.movie.release_date | date:'yyyy'}}</span>
+            <span class="overviewMovie">{{mov.movie.overview}}</span>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+      <ng-youtube-embed url="mov.url" disablekb="true" theme="dark" autoplay="true" color="black" width="720px"></ng-youtube-embed>
+    </div>
+    <div class="col-sm-3">
+    </div>
+</div>

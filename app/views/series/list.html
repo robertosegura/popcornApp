@@ -1,0 +1,17 @@
+<div class="row paginatorTop">
+    <button class="pull-left btn btn-info" ng-click="ser.changePage('-');"><</button>
+    <button class="pull-right btn btn-info" ng-click="ser.changePage('+');">></button>
+</div>
+<div class="row seasonsContainer">
+    <div class="col-sm-2" ng-repeat="serie in ser.series.results">
+        <a href="#/series/{{serie.id}}"><img class="poster" ng-src="https://image.tmdb.org/t/p/w185/{{serie.poster_path}}" alt=""></a>
+        <div class="movieTitle">
+            <span class="title">{{serie.name | cut:false:23}}</span>
+            <span class="year">{{serie.first_air_date | date:'yyyy'}}</span>
+        </div>
+    </div>
+</div>
+<div class="row paginatorTop">
+    <button class="pull-left btn btn-info" ng-click="ser.changePage('-');"><</button>
+    <button class="pull-right btn btn-info" ng-click="ser.changePage('+');">></button>
+</div>

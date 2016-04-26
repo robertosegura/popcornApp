@@ -1,0 +1,28 @@
+<div class="row seasonDetail">
+    <div class="col-sm-3">
+        <img class="poster" ng-src="https://image.tmdb.org/t/p/w185/{{sea.season.poster_path}}" alt="">
+    </div>
+
+    <div class="col-sm-9">
+      <div class="movieTitle">
+        <span class="titleSeason">{{sea.serie.name}}</span>
+      </div>
+      <div>
+        <span class="titleSeason" ng-if="sea.season.name">Name: {{sea.season.name}}</span>
+      </div>
+      <div>
+        <span class="titleSeason">Date: {{sea.season.air_date}}</span>
+      </div>
+      <div>
+        <span class="titleSeason">Episodes: {{sea.season.episodes.length}}</span>
+      </div>
+    </div>
+</div>
+<div class="row titleSeason">
+  <span>Captures:</span>
+</div>
+<div class="row pictureContainer">
+  <div class="col-sm-2" ng-repeat="episode in sea.season.episodes">
+    <img class="" ng-src="https://image.tmdb.org/t/p/w185/{{episode.still_path}}" alt="">
+  </div>
+</div>
