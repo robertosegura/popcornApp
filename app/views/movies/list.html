@@ -6,7 +6,7 @@
     <div class="col-sm-2" ng-repeat="movie in mov.movies.results">
         <a href="#/movies/{{movie.id}}"><img class="poster" ng-src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt=""></a>
         <div class="movieTitle">
-            <span class="title">{{movie.title | cut:false:23}}</span>
+            <span class="title">{{movie.title | cut:false:20}}</span>
             <span class="year">{{movie.release_date | date:'yyyy'}}</span>
         </div>
     </div>
